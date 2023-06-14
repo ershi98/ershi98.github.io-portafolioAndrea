@@ -21,6 +21,15 @@
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
 
+    <!-- formulario scripts email.js -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+        emailjs.init('-zM8rqZtvy_6Pyani')
+    </script>
+
+
 </head>
 
 <body>
@@ -56,7 +65,7 @@
                     <div class="main-menu h-100">
                         <nav class="navbar h-100 navbar-expand-lg">
                             <!-- Logo Area  -->
-                            <a class="navbar-brand" href="index.html"><img src="/img/core-img/logo.jpg" width="180px"  alt="Logo"></a>
+                            <a class="navbar-brand" href="index.html"><img src="./img/core-img/logo.jpg" width="180px"  alt="Logo"></a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
 
@@ -119,29 +128,31 @@
                 <div class="col-10">
                     <div class="contact-heading-text text-center mb-100">
                         <span></span>
-                        <h2>Please get in touch</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis. Vestibulum id orci ligula. Sed tempor, nunc ut sodales pulvinar, mauris ante euismod magna, at elementum lectus leo sed enim. Praesent dictum suscipit tincidunt. Nulla facilisi. Aenean in mollis orci. Ut interdum vulputate ante a egestas. Pellentesque varius purus malesuada arcu semper vehicula. </p>
+                        <h2>¡Hello!</h2>
+                        <p> If you're looking to grow your brand or embark on an exciting design project, you're in the right place. As a professional designer, I'm here to help you stand out and captivate your audience.
+
+                            Please take a moment to fill out this short form with your details. This way, I'll be able to better understand your needs and how I can collaborate with you. I'm thrilled at the opportunity to work together and bring your ideas to life. </p>
                     </div>
                 </div>
                 <!-- Contact Form Area -->
                 <div class="col-10">
                     <div class="contact-form-area">
-                        <form action="#" method="post">
+                        <form action="#" method="post" id="form">
                             <div class="row">
                                 <div class="col-12 col-md-4">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                    <input type="text" name="from_name" id="from_name" class="form-control"  placeholder="Your Name">
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                    <input type="email" name="email_id" id="email_id" class="form-control" placeholder="Your Email">
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                    <input type="text" id="number" class="form-control" name="number"  placeholder="Number">
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn studio-btn mt-3"><img src="img/core-img/logo-icon.png" alt=""> Send</button>
+                                    <button type="submit" id="button" value="Send Email" class="btn studio-btn mt-3"><img src="img/core-img/logo-icon.png" alt=""> Send</button>
                                 </div>
                             </div>
                         </form>
@@ -166,17 +177,17 @@
                             <!-- Single Footer Content -->
                             <div class="single-footer-content">
                                 <img src="img/core-img/map.png" alt="">
-                                <a href="#">Blvd Libertad, 34 m05200 Arévalo</a>
+                                <a href="#">Soacha  -  La Despensa</a>
                             </div>
                             <!-- Single Footer Content -->
                             <div class="single-footer-content">
                                 <img src="img/core-img/smartphone.png" alt="">
-                                <a href="#">0034 37483 2445 322</a>
+                                <a href="#">313 **** ****</a>
                             </div>
                             <!-- Single Footer Content -->
                             <div class="single-footer-content">
                                 <img src="img/core-img/envelope-2.png" alt="">
-                                <a href="#">hello@company.com</a>
+                                <a href="#">rojasyurley18@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -239,17 +250,17 @@
                         <!-- Single Footer Content -->
                         <div class="single-footer-content">
                             <img src="img/core-img/map.png" alt="">
-                            <a href="#">Blvd Libertad, 34 m05200 Arévalo</a>
+                            <a href="#">Soacha  -  La Despensa</a>
                         </div>
                         <!-- Single Footer Content -->
                         <div class="single-footer-content">
                             <img src="img/core-img/smartphone.png" alt="">
-                            <a href="#">0034 37483 2445 322</a>
+                            <a href="#">313 **** ****</a>
                         </div>
                         <!-- Single Footer Content -->
                         <div class="single-footer-content">
                             <img src="img/core-img/envelope-2.png" alt="">
-                            <a href="#">hello@company.com</a>
+                            <a href="#">rojasyurley18@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -257,10 +268,6 @@
         </div>
     </footer>
     <!-- Footer Area End -->
-
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -276,7 +283,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
     <script src="js/map-active.js"></script>
 
-
+    <script src="./js/email.js"></script>
 </body>
 
 </html>
